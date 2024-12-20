@@ -26,6 +26,6 @@ class WeatherController extends Controller
             }
             return view('weather', compact('weather', 'city', 'gmtTime'));        }
 
-        return view('weather', ['error' => 'Unable to fetch weather data.']);
+        return view('weather', ['error' => 'Please type correct name of the City.']);
     }
 }
